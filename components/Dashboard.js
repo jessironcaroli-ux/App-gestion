@@ -9,8 +9,8 @@ export default function Dashboard({ metrics, name }) {
     { name: 'Ganancia', val: metrics.netProfit, color: '#10b981' }
   ];
 
-  return React.createElement('div', { className: 'space-y-8 animate-in fade-in duration-500' }, [
-    React.createElement('h2', { className: 'text-2xl font-black text-slate-800' }, `Estado Financiero: ${name}`),
+  return React.createElement('div', { className: 'space-y-8' }, [
+    React.createElement('h2', { className: 'text-2xl font-black text-slate-800' }, `Informe: ${name}`),
     
     React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-4 gap-6' }, [
       { label: 'Utilidad Neta', val: `$${metrics.netProfit.toLocaleString()}`, color: metrics.netProfit >= 0 ? 'text-emerald-600' : 'text-rose-600' },

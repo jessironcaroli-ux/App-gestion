@@ -1,1 +1,0 @@
-// Archivo desactivado - Usando App.js para compatibilidad directa con el navegador
